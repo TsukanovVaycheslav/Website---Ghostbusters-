@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Ghost Busters</title>
+</head>
+
+<body>
+    <header class="header">
+        <img src="img/logo.png" alt="logo" class="logo">
+        <div class="search">
+            <button class="search-button">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M7.04617 0C3.16102 0 0 3.16102 0 7.04617C0 10.9315 3.16102 14.0923 7.04617 14.0923C10.9315 14.0923 14.0923 10.9315 14.0923 7.04617C14.0923 3.16102 10.9315 0 7.04617 0ZM7.04617 12.7915C3.87821 12.7915 1.30083 10.2142 1.30083 7.0462C1.30083 3.87824 3.87821 1.30083 7.04617 1.30083C10.2141 1.30083 12.7915 3.87821 12.7915 7.04617C12.7915 10.2141 10.2141 12.7915 7.04617 12.7915Z"
+                        fill="#363636" />
+                    <path
+                        d="M15.8097 14.8898L12.0806 11.1608C11.8265 10.9067 11.415 10.9067 11.1609 11.1608C10.9068 11.4147 10.9068 11.8266 11.1609 12.0805L14.89 15.8095C15.017 15.9366 15.1833 16.0001 15.3498 16.0001C15.5161 16.0001 15.6826 15.9366 15.8097 15.8095C16.0638 15.5557 16.0638 15.1437 15.8097 14.8898Z"
+                        fill="#363636" />
+                </svg>
+            </button>
+            <input type="text" class="seach-input" placeholder="Поиск по фильмам...">
+        </div>
+
+        <div class="modal">
+            <div class="search-mobile">
+                <button class="search-mobile-button">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M7.04617 0C3.16102 0 0 3.16102 0 7.04617C0 10.9315 3.16102 14.0923 7.04617 14.0923C10.9315 14.0923 14.0923 10.9315 14.0923 7.04617C14.0923 3.16102 10.9315 0 7.04617 0ZM7.04617 12.7915C3.87821 12.7915 1.30083 10.2142 1.30083 7.0462C1.30083 3.87824 3.87821 1.30083 7.04617 1.30083C10.2141 1.30083 12.7915 3.87821 12.7915 7.04617C12.7915 10.2141 10.2141 12.7915 7.04617 12.7915Z"
+                            fill="#363636" />
+                        <path
+                            d="M15.8097 14.8898L12.0806 11.1608C11.8265 10.9067 11.415 10.9067 11.1609 11.1608C10.9068 11.4147 10.9068 11.8266 11.1609 12.0805L14.89 15.8095C15.017 15.9366 15.1833 16.0001 15.3498 16.0001C15.5161 16.0001 15.6826 15.9366 15.8097 15.8095C16.0638 15.5557 16.0638 15.1437 15.8097 14.8898Z"
+                            fill="#363636" />
+                    </svg>
+                </button>
+                <input type="text" class="seach-mobile-input" placeholder="Поиск по фильмам...">
+            </div>
+
+            <nav class="navigation">
+                <a href="#" class="navigation-link">Фильмы</a>
+                <a href="#" class="navigation-link">ТВ</a>
+                <a href="#" class="navigation-link">Новости</a>
+                <a href="#" class="navigation-link">О сервисе</a>
+            </nav>
+            <div class="header-buttons">
+                <button class="header-button sign-up">Регистрация</button>
+                <button class="header-button login">Войти</button>
+            </div>
+        </div>
+
+        <button class="mobail-button">
+            <div class="menu-button"></div>
+        </button> 
+        
+    </header>
+
+    <section class="film">
+        <div class="container">
+            <div class="film-wrapper">
+                <div class="film-trailer">
+                    <img src="img/poster.jpg" alt="poster" class="poster">
+                    <a data-fancybox href="https://www.youtube.com/watch?v=84a2VD68hJU"
+                        class="trailer-button animated fadeInRight">
+                        <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M12.5 0C5.59644 0 0 5.59644 0 12.5C0 19.4036 5.59644 25 12.5 25C19.4036 25 25 19.4036 25 12.5C24.9927 5.59953 19.4005 0.00737655 12.5 0ZM17.7642 12.8983C17.6777 13.0719 17.537 13.2126 17.3634 13.2991V13.3036L10.2205 16.875C9.77942 17.0954 9.24318 16.9166 9.02272 16.4754C8.96004 16.35 8.92776 16.2116 8.92855 16.0715V8.9286C8.92834 8.43547 9.32788 8.03557 9.82101 8.03531C9.9597 8.03525 10.0965 8.06748 10.2205 8.12948L17.3634 11.7009C17.8047 11.9209 17.9842 12.4569 17.7642 12.8983Z"
+                                fill="#5671F6" />
+                        </svg>
+                        <span class="trailer-button-text">Посмотреть трейлер</span>
+                    </a>
+                </div>
+
+                <div class="film-info">
+                    <h1 class="film-title">
+                        Охотники за привидениями: Наследники
+                    </h1>
+
+                    <span class="film-subtitle">
+                        Ghostbusters: Afterlife
+                    </span>
+
+                    <p class="film-description">
+                        Мать-одиночка с двумя детьми-подростками селится на старой ферме в Оклахоме, полученной в
+                        наследство от отца, которого она не знала. Дети пытаются больше узнать о своем деде и находят
+                        автомобиль Ecto-1, принадлежавший знаменитым охотникам за привидениями.
+                    </p>
+
+                    <div class="about-film">
+                        <div class="left-side">
+                            <div class="about-text">
+                                <strong class="about-title">Режиссер</strong>
+                                <span class="about-info">Джейсон Райтман</span>
+                            </div>
+                            <div class="about-text">
+                                <strong class="about-title">Сценарий</strong>
+                                <span class="about-info">Дэн Эйкройд</span>
+                            </div>
+                            <div class="about-text">
+                                <strong class="about-title">Премьера</strong>
+                                <span class="about-info">09.07.2020 (РФ)</span>
+                            </div>
+                        </div>
+                        <div class="right-side">
+                            <div class="about-text">
+                                <strong class="about-title">Бюджет</strong>
+                                <span class="about-info">1 000 000 $</span>
+                            </div>
+                            <div class="about-text">
+                                <strong class="about-title">Кинопрокат</strong>
+                                <span class="about-info">SPPR</span>
+                            </div>
+                            <div class="about-text">
+                                <strong class="about-title">Премьера</strong>
+                                <span class="about-info">09.07.2020 (РФ)</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="rating">
+                        <div class="rating-counter">92%</div>
+                        <div class="rating-description">
+                            <h3 class="rating-title">Рейтинг зрителей</h3>
+
+                            <span class="rating-text">
+                                Средняя оценка:
+                                <strong class="rating-text-bold">4,5/5</strong>
+                            </span>
+                            <span class="rating-text">
+                                Всего голосов:
+                                <strong class="rating-text-bold">4 350</strong>
+                            </span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /.film -->
+
+    <section class="cast">
+        <div class="container">
+            <div class="cast-wrapper">
+                <div class="tabs">
+                    <a href="#" class="section-title tabs-active" id="actors">Актеры</a>
+                    <a href="#" class="section-title" id="creators">Создатели</a>
+                </div>
+
+                <div class="tabs-content">
+                    <div class="cadrs-actors is-active">
+                        <div class="card">
+                            <img src="img/actors/1.png" alt="avatar" class="avatar">
+                            <div class="card-text">
+                                <h3 class="name">Кэрри Кун</h3>
+                                <span class="en-mame">Carrie Coon</span>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <img src="img/actors/2.png" alt="avatar" class="avatar">
+                            <div class="card-text">
+                                <h3 class="name">Билл Мюррей</h3>
+                                <span class="en-mame">Bill Murray</span>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <img src="img/actors/3.png" alt="avatar" class="avatar">
+                            <div class="card-text">
+                                <h3 class="name">Пол Радд</h3>
+                                <span class="en-mame">Paul Rudd</span>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <img src="img/actors/4.png" alt="avatar" class="avatar">
+                            <div class="card-text">
+                                <h3 class="name">Энни Поттс</h3>
+                                <span class="en-mame">Annie Potts</span>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <img src="img/actors/5.png" alt="avatar" class="avatar">
+                            <div class="card-text">
+                                <h3 class="name">МакКенна Грейс</h3>
+                                <span class="en-mame">Mckenna Grace</span>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <img src="img/actors/6.png" alt="avatar" class="avatar">
+                            <div class="card-text">
+                                <h3 class="name">Дэн Эйкройд</h3>
+                                <span class="en-mame">Dan Aykroyd</span>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <img src="img/actors/7.png" alt="avatar" class="avatar">
+                            <div class="card-text">
+                                <h3 class="name">Эрни Хадсон</h3>
+                                <span class="en-mame">Ernie Hudson</span>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <img src="img/actors/8.png" alt="avatar" class="avatar">
+                            <div class="card-text">
+                                <h3 class="name">Финн Вулфард</h3>
+                                <span class="en-mame">Finn Wolfhard</span>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="cadrs-creators">
+                        <div class="card">
+                            <img src="img/creators/1.jpg" alt="avatar" class="avatar">
+                            <div class="card-text">
+                                <h3 class="name">Джейсон Райтман</h3>
+                                <span class="en-mame">Jason Reitman</span>
+                                <span class="post">Режиссер</span>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <img src="img/creators/2.jpg" alt="avatar" class="avatar">
+                            <div class="card-text">
+                                <h3 class="name">Дэн Эйкройд</h3>
+                                <span class="en-mame">Dan Aykroyd</span>
+                                <span class="post">Сценрист</span>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <img src="img/creators/3.jpg" alt="avatar" class="avatar">
+                            <div class="card-text">
+                                <h3 class="name">Майкл Бегг</h3>
+                                <span class="en-mame">Michael Beugg</span>
+                                <span class="post">Продюсер</span>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <img src="img/creators/4.jpg" alt="avatar" class="avatar">
+                            <div class="card-text">
+                                <h3 class="name">Эрик Стилберг</h3>
+                                <span class="en-mame">Eric Steelberg</span>
+                                <span class="post">Оператор</span>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <img src="img/creators/5.jpg" alt="avatar" class="avatar">
+                            <div class="card-text">
+                                <h3 class="name">Роб Симонсен</h3>
+                                <span class="en-mame">Rob Simonsen</span>
+                                <span class="post">Композитор</span>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <img src="img/creators/6.jpg" alt="avatar" class="avatar">
+                            <div class="card-text">
+                                <h3 class="name">Франсуа Одуи</h3>
+                                <span class="en-mame">François Audouy</span>
+                                <span class="post">Художник</span>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <img src="img/creators/7.jpg" alt="avatar" class="avatar">
+                            <div class="card-text">
+                                <h3 class="name">Дана Глауберман</h3>
+                                <span class="en-mame">Dana Glauberman</span>
+                                <span class="post">Монтажер</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /.cast -->
+
+    <footer class="footer">
+        <div class="container">
+            <h2 class="footer-title">Новости по теме</h2>
+            <div class="news">
+                <div class="news-card">
+                    <div class="news-date">31 марта 2020</div>
+                    <p class="news-text">
+                        «Морбиуса» и «Охотников за привидениями» перенесли на следующий год
+                    </p>
+                </div>
+
+                <div class="news-card">
+                    <div class="news-date">9 декабря 2019</div>
+                    <p class="news-text">
+                        Наследники: Вышел дебютный трейлер новых «Охотников за привидениями»
+                    </p>
+                </div>
+
+                <div class="news-card">
+                    <div class="news-date">11 ноября 2019</div>
+                    <p class="news-text">
+                        Новые «Охотники за привидениями» обзавелись названием
+                    </p>
+                </div>
+
+                <div class="news-card">
+                    <div class="news-date">19 октября 2019</div>
+                    <p class="news-text">
+                        Завершились съёмки новых «Охотников за привидениями»
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- /.footer -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js" defer></script>
+    <script src="js/jquery.fancybox.min.js" defer></script>
+    <script src="js/main.js" defer></script>
+</body>
+
+</html>
