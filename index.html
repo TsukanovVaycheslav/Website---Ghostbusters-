@@ -7,6 +7,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Ghost Busters</title>
 </head>
@@ -57,8 +58,8 @@
 
         <button class="mobail-button">
             <div class="menu-button"></div>
-        </button> 
-        
+        </button>
+
     </header>
 
     <section class="film">
@@ -295,40 +296,68 @@
     <footer class="footer">
         <div class="container">
             <h2 class="footer-title">Новости по теме</h2>
-            <div class="news">
-                <div class="news-card">
-                    <div class="news-date">31 марта 2020</div>
-                    <p class="news-text">
-                        «Морбиуса» и «Охотников за привидениями» перенесли на следующий год
-                    </p>
+
+            <!-- Slider main container -->
+            <div class="swiper-container">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <div class="news-card">
+                            <div class="news-date">31 марта 2020</div>
+                            <p class="news-text">
+                                «Морбиуса» и «Охотников за привидениями» перенесли на следующий год
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="news-card">
+                            <div class="news-date">9 декабря 2019</div>
+                            <p class="news-text">
+                                Наследники: Вышел дебютный трейлер новых «Охотников за привидениями»
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="news-card">
+                            <div class="news-date">11 ноября 2019</div>
+                            <p class="news-text">
+                                Новые «Охотники за привидениями» обзавелись названием
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="news-card">
+                            <div class="news-date">19 октября 2019</div>
+                            <p class="news-text">
+                                Завершились съёмки новых «Охотников за привидениями»
+                            </p>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="news-card">
-                    <div class="news-date">9 декабря 2019</div>
-                    <p class="news-text">
-                        Наследники: Вышел дебютный трейлер новых «Охотников за привидениями»
-                    </p>
-                </div>
+                <button class="button-next">
+                    <svg width="25" height="22" viewBox="0 0 25 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M23.7939 9.99463H1.00538C0.450104 9.99463 0 10.445 0 11C0 11.555 0.450055 12.0054 1.00538 12.0054H23.7939C24.3492 12.0054 24.7993 11.5553 24.7993 11C24.7993 10.4447 24.3492 9.99463 23.7939 9.99463Z"
+                            fill="black" />
+                        <path
+                            d="M24.7054 10.2889L14.853 0.436173C14.4602 0.0437365 13.8242 0.0437365 13.4314 0.436173C13.0386 0.828952 13.0386 1.46568 13.4314 1.85812L22.573 11L13.4314 20.1419C13.0386 20.5343 13.0386 21.1711 13.4314 21.5635C13.6278 21.7599 13.8848 21.8581 14.1422 21.8581C14.3996 21.8581 14.6566 21.7599 14.853 21.5635L24.7054 11.7108C25.0981 11.3181 25.0981 10.6813 24.7054 10.2889Z"
+                            fill="black" />
+                    </svg>
 
-                <div class="news-card">
-                    <div class="news-date">11 ноября 2019</div>
-                    <p class="news-text">
-                        Новые «Охотники за привидениями» обзавелись названием
-                    </p>
-                </div>
-
-                <div class="news-card">
-                    <div class="news-date">19 октября 2019</div>
-                    <p class="news-text">
-                        Завершились съёмки новых «Охотников за привидениями»
-                    </p>
-                </div>
+                </button>
             </div>
+
         </div>
     </footer>
     <!-- /.footer -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js" defer></script>
     <script src="js/jquery.fancybox.min.js" defer></script>
+    <script src="js/swiper.min.js" defer></script>
     <script src="js/main.js" defer></script>
 </body>
 

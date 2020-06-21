@@ -321,7 +321,6 @@ a:focus {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    width: 358px;
     margin-right: 60px;
 }
 
@@ -633,21 +632,10 @@ a:focus {
     margin-bottom: 65px;
 }
 
-.news {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-}
-
 .news-card {
-    -ms-flex-preferred-size: 23%;
-    flex-basis: 23%;
+    -ms-flex-preferred-size: 25%;
+    flex-basis: 25%;
+    width: 90%;
     height: 160px;
     background: #FFFFFF;
     border-radius: 5px;
@@ -659,6 +647,7 @@ a:focus {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
+    cursor: pointer;
 }
 
 .news-date {
@@ -676,6 +665,15 @@ a:focus {
     font-size: 14px;
     line-height: 16px;
     color: #000000;
+}
+
+.button-next {
+    display: none;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    z-index:99;
 }
 
 @media (max-width: 1200px) {
@@ -761,7 +759,12 @@ a:focus {
     .news-card {
         -ms-flex-preferred-size: 48%;
         flex-basis: 48%;
+        width: 85%;
         margin-bottom: 20px;
+    }
+
+    .button-next {
+        display: block;
     }
 }
 
